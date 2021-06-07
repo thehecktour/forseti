@@ -1,3 +1,8 @@
 from django.test import TestCase
 
-# Create your tests here.
+from . import operacao
+
+resultado = operacao.price_bitcoin
+
+if resultado < 30000:
+    print('ERRO')
