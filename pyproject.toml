@@ -9,6 +9,8 @@ python = "^3.8"
 Flask = "^2.0.1"
 requests = "^2.26.0"
 Flask-SocketIO = "^5.1.1"
+Django = "^4.0.2"
+djangorestframework = "^3.13.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
