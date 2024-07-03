@@ -1,0 +1,119 @@
+/* styles.css */
+
+.app-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .toast {
+    visibility: visible;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid;
+    position: absolute;
+    z-index: 1;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16);
+    font-family: IBM Plex Sans, sans-serif;
+    line-height: 16px;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  .toast.sucesso {
+    background-color: #0dab01;
+    border-color: #0dab01;
+    width: 272px;
+    height: 35px;
+  }
+  
+  .toast.erro {
+    background-color: #de1616;
+    border-color: #de1616;
+    width: 507px;
+    height: 35px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%; /* Inicia no meio vertical */
+    left: 50%; /* Inicia no meio horizontal */
+    transform: translate(-50%, -50%); /* Centraliza */
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16); /* Sombra com as especificações dadas */
+  }
+  
+  .toast.erro .toast-message {
+    position: absolute;
+    left: 60px; /* Ajuste conforme necessário para alinhar a mensagem à esquerda do ícone */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%);
+    width: 250px; /* Largura da mensagem na esquerda */
+  }
+  
+  .toast.erro .right-message {
+    position: absolute;
+    right: 10px; /* Ajuste conforme necessário para alinhar a mensagem "Tentar novamente" à direita */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta para centralizar verticalmente */
+    width: 200px; /* Largura da mensagem na direita */
+    text-align: right; /* Alinha o texto à direita */
+  }
+  
+  .toast-icon {
+    margin-right: 10px;
+    font-size: 20px;
+    position: absolute;
+    left: 10px; /* Posiciona o ícone à esquerda */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta para centralizar verticalmente */
+  }
+  
+  .toast-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: progress 3s linear forwards;
+  }
+  
+  .toast.erro .toast-progress {
+    background-color: #ff6666; /* Vermelho escuro */
+  }
+  
+  @keyframes fadein {
+    from {
+      top: calc(50% - 20px); /* Inicia no meio - metade da altura */
+      opacity: 0;
+    }
+    to {
+      top: 50%; /* Termina no meio */
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeout {
+    from {
+      top: 50%; /* Inicia no meio */
+      opacity: 1;
+    }
+    to {
+      top: 50%; /* Termina no meio */
+      opacity: 0;
+    }
+  }
+  
+  @keyframes progress {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  

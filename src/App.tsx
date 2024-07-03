@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 
-function App() {
+const App = () => {
+
   return (
-    <div>
-      <h1>Bitcoined</h1>
+    <div className="app">
     </div>
   );
-}
+};
 
 export default App;
