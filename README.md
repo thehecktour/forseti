@@ -1,15 +1,8 @@
-# Bitcoin Dashboard
+# Bitcoined
 
-Este é um projeto simples em React.js que consome uma API de preços do Bitcoin e exibe o valor atual na tela. Além disso, o projeto está preparado para adicionar outras funcionalidades relacionadas ao Bitcoin.
+Bitcoined is a place where you can see the coins's values and check your favorite coin and information about it.
 
-## Funcionalidades
+## Tech Stack
 
-- Exibição do preço atual do Bitcoin.
-- Estrutura preparada para adicionar outras funcionalidades relacionadas ao Bitcoin no futuro.
-
-## Tecnologias Utilizadas
-
-- React.js
-- Axios (para fazer requisições à API)
-- CSS (para estilização)
-
+- React.js (For frontend Development)
+- Axios (To make the requests)
