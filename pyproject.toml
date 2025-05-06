@@ -3,7 +3,7 @@ name = "forseti"
 version = "0.1.0"
 description = "Add XP to your UX."
 authors = [
-    {name = "Atilio",email = "atilio.jesus@grupoboticario.com.br"}
+    {name = "Atilio",email = "thehacktour@gmail.com"}
 ]
 license = {text = "thehecktour"}
 readme = "README.md"
